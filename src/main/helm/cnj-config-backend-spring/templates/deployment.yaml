@@ -50,8 +50,10 @@ spec:
           env:
             - name: SPRING_PROFILES_ACTIVE
               value: cloud
-            - name: CNAP_CLOUD
-              value: kubernetes
+            - name: CLOUDTRAIN_CONFIG_STRINGVALUE
+              value: {{ .Values.cloudtrain.config.stringValue }}
+            - name: CLOUDTRAIN_CONFIG_NUMERICVALUE
+              value: {{ .Values.cloudtrain.config.numericValue | quote }}
       {{- with .Values.nodeSelector }}
       nodeSelector:
         {{- toYaml . | nindent 8 }}
