@@ -5,7 +5,7 @@
   <groupId>group.msg.at.cloud</groupId>
   <artifactId>cnj-config-backend-spring</artifactId>
   <version>7.0.0.LOCAL.12345678</version>
-  <description>Cloud native java backend based on Spring Boot demonstrating application configuration</description>
+  <description>Cloud native Java backend based demonstrating application configuration based on Spring Boot</description>
   <distributionManagement>
     <repository>
       <id>cloudtrain-maven-repository</id>
@@ -42,7 +42,7 @@
     <maven.spring.boot.plugin.version>${spring.boot.version}</maven.spring.boot.plugin.version>
     <maven.source.plugin.version>3.2.1</maven.source.plugin.version>
     <cnj.common.test.jakarta.version>1.0.0</cnj.common.test.jakarta.version>
-    <spring.boot.version>3.0.2</spring.boot.version>
+    <spring.boot.version>3.1.0</spring.boot.version>
     <k8s.ingress.host>apps.cloudtrain.aws.msgoat.eu</k8s.ingress.host>
     <maven.install.plugin.version>3.0.0-M1</maven.install.plugin.version>
     <k8s.ingress.path>/${k8s.cluster.namespace}/${project.artifactId}</k8s.ingress.path>

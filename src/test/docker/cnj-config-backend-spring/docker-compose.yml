@@ -16,6 +16,7 @@ services:
     environment:
       AGENT_JAVA_OPTS: "-javaagent:/home/spring/org.jacoco.agent.jar=output=tcpserver,address=*,port=8089"
       DOCKER_JAVA_OPTS: "-Xms1g -Xmx1g"
+      SPRING_PROFILES_ACTIVE: "default"
       CLOUDTRAIN_CONFIG_STRINGVALUE: "environmentVariables"
       CLOUDTRAIN_CONFIG_NUMERICVALUE: "456"
 
