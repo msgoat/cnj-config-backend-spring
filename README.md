@@ -4,7 +4,7 @@ Cloud native Java backend based demonstrating application configuration based on
 
 ## Status
 
-![Build status]()
+![Build status](https://codebuild.eu-west-1.amazonaws.com/badges?uuid=eyJlbmNyeXB0ZWREYXRhIjoiTzhZYmNYYjdIcFBJaC83SVFJUmJzcFF6Zm1hOWpqc0NjaEdzUStnYVppcTBOaVhiQ2VuN21KRGFuRVRQOWdvMWorZ2NLV0hSUktmcEM1MG9HQnU0b0ZrPSIsIml2UGFyYW1ldGVyU3BlYyI6ImdCSlNQYzJmWDlJQkxVc0giLCJtYXRlcmlhbFNldFNlcmlhbCI6MX0%3D&branch=main)
 
 ## Release Information
 
