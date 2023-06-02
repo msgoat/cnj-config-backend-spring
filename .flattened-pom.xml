@@ -14,8 +14,8 @@
     </repository>
   </distributionManagement>
   <properties>
-    <k8s.cluster.route>https://apps.cloudtrain.aws.msgoat.eu</k8s.cluster.route>
-    <k8s.cluster.namespace>default</k8s.cluster.namespace>
+    <k8s.cluster.route>https://${k8s.ingress.host}</k8s.cluster.route>
+    <k8s.cluster.namespace>cloudtrain</k8s.cluster.namespace>
     <maven.flatten.plugin.version>1.2.7</maven.flatten.plugin.version>
     <sonar.host.url>https://sonarqube.cloudtrain.aws.msgoat.eu</sonar.host.url>
     <restassured.version>5.2.1</restassured.version>
@@ -56,7 +56,7 @@
     <jacoco.address>localhost</jacoco.address>
     <java.version>17</java.version>
     <maven.clean.plugin.version>3.1.0</maven.clean.plugin.version>
-    <cnj.common.test.core.version>1.0.0</cnj.common.test.core.version>
+    <cnj.common.test.core.version>1.1.0</cnj.common.test.core.version>
     <maven.helm.plugin.version>4.0.0</maven.helm.plugin.version>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <logstash.logback.encoder.version>6.1</logstash.logback.encoder.version>
@@ -90,16 +90,6 @@
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-tomcat</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-undertow</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
