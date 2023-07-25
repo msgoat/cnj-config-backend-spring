@@ -58,7 +58,7 @@
         <!-- pinning versions of application type specific maven plugins -->
         <maven.spring.boot.plugin.version>${spring.boot.version}</maven.spring.boot.plugin.version>
         <!-- pinning versions of cloud native specific maven plugins -->
-        <maven.compose.plugin.version>4.0.0</maven.compose.plugin.version>
+        <maven.compose.plugin.version>5.0.0</maven.compose.plugin.version>
         <maven.docker.plugin.version>0.37.0</maven.docker.plugin.version>
         <maven.helm.plugin.version>4.0.0</maven.helm.plugin.version>
         <!-- quality assurance properties -->
@@ -924,4 +924,30 @@
             <url>https://nexus.cloudtrain.aws.msgoat.eu/repository/cloudtrain-releases/</url>
         </repository>
     </distributionManagement>
+    <pluginRepositories>
+        <pluginRepository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <id>cloudtrain-maven-repository</id>
+            <name>msg Automotive CloudTrain Releases Repository</name>
+            <url>https://nexus.cloudtrain.aws.msgoat.eu/repository/cloudtrain-releases/</url>
+            <layout>default</layout>
+        </pluginRepository>
+    </pluginRepositories>
+    <repositories>
+        <repository>
+            <releases>
+                <enabled>true</enabled>
+                <updatePolicy>daily</updatePolicy>
+                <checksumPolicy>fail</checksumPolicy>
+            </releases>
+            <id>cloudtrain-maven-repository</id>
+            <name>msg Automotive CloudTrain Releases Repository</name>
+            <url>https://nexus.cloudtrain.aws.msgoat.eu/repository/cloudtrain-releases/</url>
+            <layout>default</layout>
+        </repository>
+    </repositories>
 </project>
