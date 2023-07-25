@@ -9,7 +9,7 @@
     <description>Cloud native Java backend based demonstrating application configuration based on Spring Boot</description>
     <properties>
         <!-- new Maven version management -->
-        <revision>7.0.0</revision>
+        <revision>7.1.0</revision>
         <sha1>.12345678</sha1>
         <changelist>.LOCAL</changelist>
         <!-- general properties -->
