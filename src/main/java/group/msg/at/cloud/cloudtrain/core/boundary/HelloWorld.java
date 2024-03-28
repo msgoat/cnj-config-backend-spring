@@ -13,14 +13,16 @@ public class HelloWorld {
     @Value("${cloudtrain.config.stringValue:???cloudtrain.config.stringValue???}")
     private String stringConfigValue;
 
-    @Value("${cloudtrain.config.numericValue}")
+    @Value("${cloudtrain.config.numericValue:-1}")
     private int numericConfigValue;
 
     public Message getHelloMessage() {
         Message result = new Message(UUID.randomUUID());
         result.setCode("hello");
-        result.setText(String.format("Welcome to Cloud Native Java with %s! numericConfigValue : %d", this.stringConfigValue, this.numericConfigValue));
-        result.setLocale(Locale.GERMAN);
+        result.setText("Welcome to Cloud Native Java with Spring Boot!");
+        result.setStringConfigValue(this.stringConfigValue);
+        result.setNumericConfigValue(this.numericConfigValue);
+        result.setLocale(Locale.ENGLISH);
         return result;
     }
 }

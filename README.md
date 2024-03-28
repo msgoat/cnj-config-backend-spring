@@ -4,6 +4,10 @@ Cloud native Java backend based demonstrating application configuration
 based on [Spring Boot Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/howto.html#howto.properties-and-configuration.externalize-configuration)
 which is based on [Spring Externalized Configuration](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.external-config)
 
+The application is packaged as a multi-architecture docker image which supports the following platforms:
+* linux/amd64
+* linux/arm64/v8
+
 ## Synopsis
 
 The `Spring Boot Externalized Configuration` feature
@@ -52,6 +56,10 @@ A changelog can be found in [changelog.md](changelog.md).
 ## Docker Pull Command
 
 `docker pull docker.cloudtrain.aws.msgoat.eu/cloudtrain/cnj-hello-backend-quarkus`
+
+## Helm Pull Command
+
+`helm pull oci://docker.cloudtrain.aws.msgoat.eu/cloudtrain-charts/cnj-hello-backend-quarkus`
 
 ## HOW-TO build this application locally
 
